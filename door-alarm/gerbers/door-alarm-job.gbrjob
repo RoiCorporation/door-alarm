@@ -5,17 +5,17 @@
       "Application": "Pcbnew",
       "Version": "10.0.3"
     },
-    "CreationDate": "2026-08-05T18:05:36+02:00"
+    "CreationDate": "2026-08-08T00:28:45+02:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "door-alarm",
       "GUID": "646f6f72-2d61-46c6-9172-6d2e6b696361",
-      "Revision": "rev?"
+      "Revision": "2.0"
     },
     "Size": {
-      "X": 34.55,
-      "Y": 90.55
+      "X": 49.55,
+      "Y": 85.55
     },
     "LayerNumber": 2,
     "BoardThickness": 1.6,
@@ -88,29 +88,24 @@
     },
     {
       "Type": "SolderMask",
-      "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "F.Cu"
     },
     {
       "Type": "Dielectric",
-      "Thickness": 1.51,
       "Material": "FR4",
       "Name": "F.Cu/B.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
-      "Thickness": 0.035,
       "Name": "B.Cu"
     },
     {
       "Type": "SolderMask",
-      "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
     {

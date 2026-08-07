@@ -240,7 +240,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "2.0"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -528,7 +528,7 @@
       "specctra_dsn": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "Door alarm layout"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -698,7 +698,7 @@
         "uuid": "5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
       }
     ],
-    "used_designators": "U1,R2-6,V2,SW1,D1-4",
+    "used_designators": "BZ1,V2-3,U1,R2-7,RV1,SW1,D1-4",
     "variants": []
   },
   "sheets": [

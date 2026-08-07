@@ -6,9 +6,187 @@
 	(paper "A4")
 	(title_block
 		(title "Door alarm schematic")
-		(date "2026-08-04")
+		(date "2026-08-07")
+		(rev "2.0")
 	)
 	(lib_symbols
+		(symbol "Device:Buzzer"
+			(pin_names
+				(offset 0.0254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "BZ"
+				(at 3.81 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Buzzer"
+				(at 3.81 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -0.635 2.54 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at -0.635 2.54 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Buzzer, polarized"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "quartz resonator ceramic"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*Buzzer*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Buzzer_0_1"
+				(polyline
+					(pts
+						(xy -1.651 1.905) (xy -1.143 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.397 2.159) (xy -1.397 1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 3.175)
+					(mid 3.1612 0)
+					(end 0 -3.175)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 3.175) (xy 0 -3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Buzzer_1_1"
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -495,6 +673,219 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Potentiometer_Trim"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer_Trim"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Trim-potentiometer"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" "POT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resistor variable trimpot trimmer"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 0.762) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1518,12 +1909,6 @@
 		(uuid "00ed8a28-1ed1-42bb-800a-2163b8d585d3")
 	)
 	(junction
-		(at 130.81 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05403de4-c695-46e0-945f-5f4d46d28d28")
-	)
-	(junction
 		(at 135.89 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1536,46 +1921,58 @@
 		(uuid "0e065c30-d506-4fd0-8a64-707a0942945c")
 	)
 	(junction
-		(at 175.26 123.19)
+		(at 181.61 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1df01f1d-6459-4d81-9d62-057467783844")
+	)
+	(junction
+		(at 173.99 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1fa89800-f55a-481a-ab4f-5e5022fcd8d2")
 	)
 	(junction
-		(at 135.89 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "320f3d9d-a75d-4057-82e8-a74e83522104")
-	)
-	(junction
-		(at 167.64 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9f7e3b03-1bae-4324-9891-d7b365d8d7fb")
-	)
-	(junction
-		(at 182.88 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a2c0c2fa-f8b5-4b83-bb8f-3fab6bac9dc7")
-	)
-	(junction
 		(at 130.81 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b5a51ca5-b4c3-4aa7-a0a8-048ca83d6b76")
+		(uuid "25e8b81e-eb85-4e92-9281-4529a1bde35c")
 	)
 	(junction
-		(at 175.26 142.24)
+		(at 129.54 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bf3d9a96-fb52-493e-bcd2-5cce9e6dcd8a")
+		(uuid "51baf894-e851-4218-89f9-ec59962b798c")
 	)
 	(junction
-		(at 130.81 111.76)
+		(at 114.3 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cf667646-c1fc-4486-8120-fa86dc3f9692")
+		(uuid "66da8ed2-2c33-4b38-b67b-48f6033d1c43")
+	)
+	(junction
+		(at 173.99 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "810f9f35-cc45-41ed-a2d8-5a20f3f4701f")
+	)
+	(junction
+		(at 130.81 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9750fd04-5a2c-4c04-8659-fd6782b0b56a")
+	)
+	(junction
+		(at 125.73 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bf1ce3b-02ac-467a-af41-0f095010eaf8")
+	)
+	(junction
+		(at 181.61 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a87bd5cd-3d86-4a6e-9d15-a5d89414e794")
 	)
 	(junction
 		(at 149.86 142.24)
@@ -1584,22 +1981,28 @@
 		(uuid "d61198a4-94eb-4c76-8b69-3e1be9620d90")
 	)
 	(junction
-		(at 167.64 123.19)
+		(at 166.37 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9359cfd-2067-4d1c-9277-e5d3b3eea34d")
 	)
 	(junction
-		(at 114.3 139.7)
+		(at 135.89 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e200b356-4327-4420-b3b4-a22c92ae239f")
+		(uuid "dd833198-0cdc-49f1-9886-a5c9057e7d42")
 	)
 	(junction
-		(at 114.3 128.27)
+		(at 187.96 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e6d5a8f9-f830-4853-a100-724b4841fc9a")
+		(uuid "e0e57210-ad09-46f5-bad3-4f7e45196df0")
+	)
+	(junction
+		(at 166.37 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3c507f2-69ed-4c64-bf3d-261136a23832")
 	)
 	(junction
 		(at 152.4 111.76)
@@ -1609,13 +2012,33 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 123.19) (xy 167.64 123.19)
+			(xy 160.02 123.19) (xy 166.37 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "025a8a00-a3f0-4f43-8013-9fb039fa2a02")
+	)
+	(wire
+		(pts
+			(xy 173.99 142.24) (xy 181.61 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "084834f3-2909-4d3a-8ae8-b3b9914e030b")
+	)
+	(wire
+		(pts
+			(xy 114.3 125.73) (xy 114.3 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a105803-a67c-46b2-b05e-30c1b370abc6")
 	)
 	(wire
 		(pts
@@ -1629,7 +2052,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 139.7) (xy 175.26 142.24)
+			(xy 173.99 139.7) (xy 173.99 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1639,7 +2062,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 130.81) (xy 175.26 132.08)
+			(xy 173.99 130.81) (xy 173.99 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1669,7 +2092,17 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 123.19) (xy 182.88 123.19)
+			(xy 125.73 111.76) (xy 135.89 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27ce3cb5-fdac-4fd4-b458-10c33587f5be")
+	)
+	(wire
+		(pts
+			(xy 173.99 123.19) (xy 181.61 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1679,7 +2112,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 132.08) (xy 167.64 130.81)
+			(xy 166.37 132.08) (xy 166.37 130.81)
 		)
 		(stroke
 			(width 0)
@@ -1709,17 +2142,17 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 124.46) (xy 114.3 128.27)
+			(xy 135.89 123.19) (xy 135.89 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3bb10fd7-c576-4c8d-91d6-d461fb2c04a9")
+		(uuid "3c9c3c56-d6ba-42d2-93f3-973027a41151")
 	)
 	(wire
 		(pts
-			(xy 167.64 123.19) (xy 175.26 123.19)
+			(xy 166.37 123.19) (xy 173.99 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1739,13 +2172,13 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 111.76) (xy 114.3 116.84)
+			(xy 187.96 123.19) (xy 187.96 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "48c238bf-6ba2-4699-9681-068059ecbca8")
+		(uuid "41745036-fd96-4d70-880a-aff7eff2ecbb")
 	)
 	(wire
 		(pts
@@ -1759,7 +2192,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 111.76) (xy 130.81 111.76)
+			(xy 114.3 111.76) (xy 125.73 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1779,13 +2212,13 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 120.65) (xy 130.81 121.92)
+			(xy 187.96 142.24) (xy 198.12 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a4d50ed-854e-4dfa-91d5-97ae1a182d9c")
+		(uuid "5876087c-9b0e-40bb-aea8-2968ececf97d")
 	)
 	(wire
 		(pts
@@ -1799,7 +2232,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 142.24) (xy 167.64 142.24)
+			(xy 149.86 142.24) (xy 166.37 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1809,7 +2242,37 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 120.65) (xy 135.89 125.73)
+			(xy 114.3 138.43) (xy 114.3 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66e14504-a673-4282-a4c5-2fe1591890b7")
+	)
+	(wire
+		(pts
+			(xy 130.81 123.19) (xy 135.89 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b89082-3f5d-46ef-ac20-98f079249726")
+	)
+	(wire
+		(pts
+			(xy 130.81 129.54) (xy 130.81 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7180ac05-5828-478f-97bf-05bb779dd8e3")
+	)
+	(wire
+		(pts
+			(xy 135.89 120.65) (xy 135.89 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1829,13 +2292,43 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 129.54) (xy 130.81 142.24)
+			(xy 130.81 137.16) (xy 130.81 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7c607acb-2ec1-4be6-b898-9809418157ef")
+	)
+	(wire
+		(pts
+			(xy 129.54 123.19) (xy 130.81 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cc632c6-45e5-4206-97a2-3adb67981c74")
+	)
+	(wire
+		(pts
+			(xy 187.96 135.89) (xy 187.96 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f16fc76-83ae-4a63-a33f-6e1926b7392b")
+	)
+	(wire
+		(pts
+			(xy 181.61 123.19) (xy 187.96 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "809f0700-6ec7-406e-9d3e-4efd7ce23f8a")
 	)
 	(wire
 		(pts
@@ -1849,7 +2342,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 130.81) (xy 182.88 132.08)
+			(xy 181.61 130.81) (xy 181.61 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1869,23 +2362,13 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 142.24) (xy 182.88 142.24)
+			(xy 181.61 142.24) (xy 187.96 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "92ee119b-3a5a-41e8-bd2d-4dcfe10fcb43")
-	)
-	(wire
-		(pts
-			(xy 130.81 111.76) (xy 135.89 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94165468-aaaa-4430-b5a5-80612aeeab60")
+		(uuid "9c75b77a-5b01-4772-a54c-997da061ef52")
 	)
 	(wire
 		(pts
@@ -1899,17 +2382,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 119.38) (xy 130.81 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aedb94d1-cd71-4e37-8995-6bdf5a149f5a")
-	)
-	(wire
-		(pts
-			(xy 182.88 139.7) (xy 182.88 142.24)
+			(xy 181.61 139.7) (xy 181.61 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1929,16 +2402,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 120.65) (xy 135.89 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6f9168a-4546-48fa-94d6-071f4c2a5a0d")
-	)
-	(wire
-		(pts
 			(xy 198.12 138.43) (xy 198.12 142.24)
 		)
 		(stroke
@@ -1949,53 +2412,33 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 142.24) (xy 198.12 142.24)
+			(xy 125.73 127) (xy 129.54 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c72b61e8-d203-40dd-8730-40b35ed32ddd")
+		(uuid "d0554488-460d-4df8-987b-7bdce4879eab")
 	)
 	(wire
 		(pts
-			(xy 167.64 142.24) (xy 175.26 142.24)
+			(xy 166.37 142.24) (xy 173.99 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c8a2a95e-5207-4cc1-adca-2fff9bff70ef")
+		(uuid "dc046eb3-b545-4f4a-b484-4f4edc3c452e")
 	)
 	(wire
 		(pts
-			(xy 114.3 138.43) (xy 114.3 139.7)
+			(xy 129.54 127) (xy 129.54 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d45cde26-a2cf-450c-a855-b3196eddf513")
-	)
-	(wire
-		(pts
-			(xy 114.3 139.7) (xy 114.3 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5c71413-9575-466b-9ebe-84e9e5845dbc")
-	)
-	(wire
-		(pts
-			(xy 114.3 128.27) (xy 139.7 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5cbbf48-3d04-4b8a-9515-a40eb7dd9739")
+		(uuid "df383f62-a5ae-4042-8dfa-e95d9bc20bb0")
 	)
 	(wire
 		(pts
@@ -2009,7 +2452,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 128.27) (xy 114.3 129.54)
+			(xy 114.3 128.27) (xy 114.3 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2029,7 +2472,27 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 139.7) (xy 167.64 142.24)
+			(xy 114.3 111.76) (xy 114.3 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edceb24e-c4b2-4c11-a2d8-087cb857c8cb")
+	)
+	(wire
+		(pts
+			(xy 114.3 128.27) (xy 139.7 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4b192cd-0423-4416-8ea7-91d5fac80bb1")
+	)
+	(wire
+		(pts
+			(xy 166.37 139.7) (xy 166.37 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2048,89 +2511,8 @@
 		(uuid "f7c48817-c1e8-4e3f-8d7c-0e5c8863f0b8")
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 130.81 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "01fef91f-3e89-49d5-bc4b-b84f81800f71")
-		(property "Reference" "R1"
-			(at 125.984 114.046 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220 kΩ"
-			(at 122.174 117.348 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 129.032 115.57 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 130.81 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "708eabc6-fa4d-4fd5-a6dd-b2802af0b452")
-		)
-		(pin "2"
-			(uuid "7dfb3c82-db54-45e0-8fe3-31abd8471058")
-		)
-		(instances
-			(project "door-alarm"
-				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
-		(at 175.26 135.89 90)
+		(at 173.99 135.89 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2138,9 +2520,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "156d6c13-5758-4121-a30a-80fad2c54c69")
+		(uuid "14e4d020-f9e0-4eb8-8959-d96ec73bd996")
 		(property "Reference" "D2"
-			(at 170.942 134.874 90)
+			(at 169.672 133.858 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2151,7 +2533,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 179.07 138.7474 90)
+			(at 177.8 138.7474 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2163,7 +2545,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 175.26 135.89 0)
+			(at 173.99 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2174,7 +2556,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 135.89 0)
+			(at 173.99 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2185,7 +2567,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 175.26 135.89 0)
+			(at 173.99 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2195,19 +2577,8 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=A 2=K"
-			(at 175.26 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 175.26 135.89 0)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 173.99 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2218,10 +2589,10 @@
 			)
 		)
 		(pin "2"
-			(uuid "52fdeeb4-0447-48b5-a369-e2a2e046e753")
+			(uuid "089b80d7-dfb7-48df-8a35-5fa304da275c")
 		)
 		(pin "1"
-			(uuid "b1d0a878-c875-473c-8141-bcd1e5be60c2")
+			(uuid "84a9b806-c60b-47d1-b77d-2b5adfb26e02")
 		)
 		(instances
 			(project "door-alarm"
@@ -2233,8 +2604,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 167.64 135.89 90)
+		(lib_id "Device:R")
+		(at 125.73 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2242,9 +2613,90 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "1bf1a77e-0cec-46e6-8fc3-ace05c97229e")
-		(property "Reference" "D1"
-			(at 163.322 134.874 90)
+		(uuid "18817085-b435-4e1c-9d74-1342e9fdca03")
+		(property "Reference" "R6"
+			(at 121.158 113.792 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "110kΩ"
+			(at 120.142 118.364 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 123.952 115.57 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1b501bcd-3c4b-43b2-bf5a-0d0117bb7fe5")
+		)
+		(pin "2"
+			(uuid "66bca44f-402c-4ec2-b939-0ba133267817")
+		)
+		(instances
+			(project "door-alarm"
+				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 181.61 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2653fc8a-88ed-4bee-bce0-1ef701a0a8b9")
+		(property "Reference" "D3"
+			(at 177.292 133.858 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2255,7 +2707,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 171.45 138.7474 90)
+			(at 185.42 138.7474 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2267,7 +2719,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 167.64 135.89 0)
+			(at 181.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2278,7 +2730,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 135.89 0)
+			(at 181.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2289,7 +2741,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 167.64 135.89 0)
+			(at 181.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2299,19 +2751,8 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=A 2=K"
-			(at 167.64 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 167.64 135.89 0)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 181.61 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2322,15 +2763,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "e3aed6c5-42c4-494b-a7e1-f9848fbd1594")
+			(uuid "3c8498f2-89d0-4aea-b4ea-da21b46f8895")
 		)
 		(pin "1"
-			(uuid "c112b70f-fea2-43d6-88e7-353e11e05951")
+			(uuid "3d1bda72-7fb8-49b4-9a23-ec6a8cd10adb")
 		)
 		(instances
 			(project "door-alarm"
 				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
-					(reference "D1")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -2338,7 +2779,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 167.64 127 0)
+		(at 114.3 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2346,9 +2787,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "49f44b3f-6686-4996-97ce-ca5f660b9695")
-		(property "Reference" "R2"
-			(at 163.068 125.222 0)
+		(uuid "3ca5ce2f-4aa1-4d60-b272-1e231fbc4ade")
+		(property "Reference" "R7"
+			(at 109.728 132.842 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2358,8 +2799,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120Ω"
-			(at 161.798 130.556 0)
+		(property "Value" "47kΩ"
+			(at 107.442 136.144 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2370,7 +2811,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 165.862 127 90)
+			(at 112.522 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2381,7 +2822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 127 0)
+			(at 114.3 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2392,7 +2833,88 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 167.64 127 0)
+			(at 114.3 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca49787a-eb1c-4f64-85d1-03c52e08825d")
+		)
+		(pin "2"
+			(uuid "c6fe494a-f55e-4304-a4fb-979153f7b0f7")
+		)
+		(instances
+			(project "door-alarm"
+				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 166.37 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "49f44b3f-6686-4996-97ce-ca5f660b9695")
+		(property "Reference" "R2"
+			(at 161.798 125.222 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "180Ω"
+			(at 159.766 130.048 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 164.592 127 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 166.37 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2412,88 +2934,6 @@
 			(project "door-alarm"
 				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Reed")
-		(at 114.3 134.62 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5eacf623-1f7d-415d-a2f2-21ca0d011923")
-		(property "Reference" "SW1"
-			(at 109.474 130.048 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW_Reed"
-			(at 116.84 135.8899 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPDT_REED_MSDM-DT"
-			(at 114.3 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "reed switch"
-			(at 114.3 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1b7f0e94-020c-4aa7-a2bb-770ad12a46b0")
-		)
-		(pin "2"
-			(uuid "98fe56a8-ebb6-4ed4-9b20-987e9e08505f")
-		)
-		(instances
-			(project "door-alarm"
-				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -2810,110 +3250,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 182.88 135.89 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "7c1fa9f6-fa4c-4af8-91e6-53dd2425bdae")
-		(property "Reference" "D3"
-			(at 178.562 134.874 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 186.69 138.7474 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 182.88 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 182.88 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 182.88 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=A 2=K"
-			(at 182.88 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 182.88 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7803a65a-054e-440b-bd8d-46cfe7caca48")
-		)
-		(pin "1"
-			(uuid "83a45e0c-364f-4ba9-a437-3e1e9dd68f67")
-		)
-		(instances
-			(project "door-alarm"
-				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 170.18 111.76 0)
 		(unit 1)
@@ -2986,6 +3322,124 @@
 			(project "door-alarm"
 				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
 					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer_Trim")
+		(at 125.73 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90c7dc33-8da3-4a29-a350-f7ccde79b6d9")
+		(property "Reference" "RV1"
+			(at 123.698 121.412 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Potentiometer_Trim"
+			(at 123.19 124.4599 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Potentiometer_THT:Potentiometer_Bourns_3266Z_Horizontal"
+			(at 125.73 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Trim-potentiometer"
+			(at 125.73 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 125.73 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 125.73 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 125.73 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4b896e88-e862-4542-8cb2-13041ed717ed")
+		)
+		(pin "3"
+			(uuid "5575413d-7f32-4709-9e83-be71bd285bc5")
+		)
+		(pin "1"
+			(uuid "a69cc4ef-17c0-4485-bec0-d6bde428f1d4")
+		)
+		(instances
+			(project "door-alarm"
+				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
+					(reference "RV1")
 					(unit 1)
 				)
 			)
@@ -3147,8 +3601,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 114.3 120.65 0)
+		(lib_id "Device:LED")
+		(at 166.37 135.89 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3156,31 +3610,125 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "aa43f194-8445-4990-a84a-26c39a1eb47a")
-		(property "Reference" "R6"
-			(at 109.474 119.126 0)
+		(uuid "a746f575-8043-4b8d-bcb9-22886fb4112e")
+		(property "Reference" "D1"
+			(at 162.052 133.858 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "5.6 kΩ"
-			(at 105.664 122.428 0)
+		(property "Value" "LED"
+			(at 170.18 138.7474 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 112.522 120.65 90)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 166.37 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 166.37 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 166.37 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0f51fea0-d730-4919-ba0e-9fc13aa74c92")
+		)
+		(pin "1"
+			(uuid "f7c8c112-1b23-499b-bda9-9b5dcbd8e4d6")
+		)
+		(instances
+			(project "door-alarm"
+				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Reed")
+		(at 114.3 120.65 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a8a1bc0a-d74f-4355-a1da-98d42802b61f")
+		(property "Reference" "SW1"
+			(at 108.458 117.094 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SW_Reed"
+			(at 116.84 121.9199 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Button_Switch_SMD:SW_SPDT_REED_MSDM-DT"
+			(at 114.3 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3201,7 +3749,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "reed switch"
 			(at 114.3 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -3213,15 +3761,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2eea36ef-ed16-457f-b69d-57d72b6c696c")
+			(uuid "ae71ee75-47c7-4936-85e7-fbfdd7abed6c")
 		)
 		(pin "2"
-			(uuid "f049f60d-d61e-4b7a-84fa-d80377df31cd")
+			(uuid "6f72f707-c596-4631-b5fd-f14b91fedd22")
 		)
 		(instances
 			(project "door-alarm"
 				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
-					(reference "R6")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3229,7 +3777,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 175.26 127 0)
+		(at 173.99 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3239,7 +3787,7 @@
 		(dnp no)
 		(uuid "adbed49f-f610-48d5-81e9-9d82100ec541")
 		(property "Reference" "R3"
-			(at 170.688 125.222 0)
+			(at 169.418 125.222 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3249,8 +3797,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120Ω"
-			(at 169.418 130.556 0)
+		(property "Value" "180Ω"
+			(at 167.386 130.048 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3261,7 +3809,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 173.482 127 90)
+			(at 172.212 127 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3272,7 +3820,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 127 0)
+			(at 173.99 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3283,7 +3831,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 175.26 127 0)
+			(at 173.99 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3391,7 +3939,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 130.81 125.73 0)
+		(at 130.81 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3401,7 +3949,7 @@
 		(dnp no)
 		(uuid "d7261e10-a2ba-48fa-a5b7-a8c8c48a320b")
 		(property "Reference" "C2"
-			(at 125.222 124.206 0)
+			(at 125.222 131.826 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3412,7 +3960,7 @@
 			)
 		)
 		(property "Value" "10 µF"
-			(at 122.174 126.746 0)
+			(at 122.174 134.366 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3423,7 +3971,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm"
-			(at 131.7752 129.54 0)
+			(at 131.7752 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3434,7 +3982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 125.73 0)
+			(at 130.81 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3445,7 +3993,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 130.81 125.73 0)
+			(at 130.81 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3614,7 +4162,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 182.88 127 0)
+		(at 181.61 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3624,7 +4172,7 @@
 		(dnp no)
 		(uuid "de2acd41-c4cb-497d-94dd-f6e34032b0ee")
 		(property "Reference" "R4"
-			(at 178.308 125.222 0)
+			(at 177.038 125.222 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3634,8 +4182,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "120Ω"
-			(at 177.038 130.556 0)
+		(property "Value" "180Ω"
+			(at 175.006 130.048 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3646,7 +4194,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 181.102 127 90)
+			(at 179.832 127 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3657,7 +4205,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 127 0)
+			(at 181.61 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3668,7 +4216,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 182.88 127 0)
+			(at 181.61 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3688,6 +4236,88 @@
 			(project "door-alarm"
 				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Buzzer")
+		(at 190.5 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f705880b-288c-427b-8dc7-3113667c6f71")
+		(property "Reference" "BZ1"
+			(at 191.262 128.778 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Buzzer"
+			(at 194.31 134.6199 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Buzzer_Beeper:Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm"
+			(at 189.865 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.865 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Buzzer, polarized"
+			(at 190.5 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7f8fb1a4-d318-41a3-a69e-2bcac09a588a")
+		)
+		(pin "1"
+			(uuid "47b32a6f-952f-4237-add2-7e9ba6a58e48")
+		)
+		(instances
+			(project "door-alarm"
+				(path "/5eeac868-22eb-4e32-b78d-9d5fe2ffe684"
+					(reference "BZ1")
 					(unit 1)
 				)
 			)
