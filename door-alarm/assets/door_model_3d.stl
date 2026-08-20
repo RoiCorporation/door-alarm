@@ -1,24 +1,4 @@
-[![](https://img.shields.io/badge/License-MIT-yellow.svg)](/LICENSE)
-
-
-
-
-# Door alarm PCB design
-Repository with the PCB design for the door alarm project.
-
-
-
-## 📋 Schematic
-[Schematic](door-alarm/assets/door-alarm.pdf)
-[Schematic](door-alarm/assets/door-alarm.svg)
-
-
-
-## 📐 3D view
-[3d model of the finished PCB](door-alarm/assets/door_model_3d.stl){previewpage}
-
-```stl
-    solid 
+solid 
  facet normal  0.000000e+00 -1.000000e+00 -0.000000e+00
    outer loop
      vertex  1.338000e+02 -7.863750e+01  2.090000e+00
@@ -62481,4 +62461,3 @@ Repository with the PCB design for the door alarm project.
    endloop
  endfacet
 endsolid
-```
