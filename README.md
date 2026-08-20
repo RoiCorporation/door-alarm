@@ -19,6 +19,7 @@ Repository with the PCB design for the door alarm project.
 
 
 
+[3d model of the finished PCB](door-alarm/assets/door-alarm-3d-model.stl)
 ![3d model of the finished PCB](door-alarm/assets/door-alarm-3d-model.stl)
 
 ```stl
