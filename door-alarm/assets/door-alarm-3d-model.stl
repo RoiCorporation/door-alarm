@@ -1,4 +1,4 @@
-solid Mesh
+solid
  facet normal  0.000000e+00 -1.000000e+00 -0.000000e+00
    outer loop
      vertex  1.338000e+02 -7.863750e+01  2.090000e+00
@@ -62460,4 +62460,4 @@ solid Mesh
      vertex  1.591600e+02 -7.295000e+01  1.510000e+00
    endloop
  endfacet
-endsolid Mesh
+endsolid
