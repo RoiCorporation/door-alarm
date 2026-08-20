@@ -10,12 +10,103 @@ Repository with the PCB design for the door alarm project.
 
 ## 📋 Schematic
 ![Schematic of the door alarm](door-alarm/assets/door-alarm.svg)
-![Schematic of the door alarm](door-alarm/assets/door-alarm.stl)
 
 
 
 ## 📐 3D view
-![3d model of the finished PCB](door-alarm/assets/door_model_3d.stl)
+```stl
+solid Mesh
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 10.000000 0.000000 0.000000
+      vertex 10.000000 -20.000000 20.000000
+      vertex 10.000000 -20.000000 0.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 10.000000 0.000000 20.000000
+      vertex 10.000000 -20.000000 20.000000
+      vertex 10.000000 0.000000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -10.000000 -20.000000 0.000000
+      vertex -10.000000 0.000000 20.000000
+      vertex -10.000000 0.000000 0.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -10.000000 -20.000000 20.000000
+      vertex -10.000000 0.000000 20.000000
+      vertex -10.000000 -20.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -10.000000 -20.000000 20.000000
+      vertex 10.000000 0.000000 20.000000
+      vertex -10.000000 0.000000 20.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -0.000000 1.000000
+    outer loop
+      vertex 10.000000 -20.000000 20.000000
+      vertex 10.000000 0.000000 20.000000
+      vertex -10.000000 -20.000000 20.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -10.000000 0.000000 0.000000
+      vertex 10.000000 -20.000000 0.000000
+      vertex -10.000000 -20.000000 0.000000
+    endloop
+  endfacet
+  facet normal -0.000000 -0.000000 -1.000000
+    outer loop
+      vertex 10.000000 0.000000 0.000000
+      vertex 10.000000 -20.000000 0.000000
+      vertex -10.000000 0.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -10.000000 0.000000 0.000000
+      vertex 10.000000 0.000000 20.000000
+      vertex 10.000000 0.000000 0.000000
+    endloop
+  endfacet
+  facet normal -0.000000 1.000000 0.000000
+    outer loop
+      vertex -10.000000 0.000000 20.000000
+      vertex 10.000000 0.000000 20.000000
+      vertex -10.000000 0.000000 0.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 10.000000 -20.000000 0.000000
+      vertex -10.000000 -20.000000 20.000000
+      vertex -10.000000 -20.000000 0.000000
+    endloop
+  endfacet
+  facet normal -0.000000 -1.000000 -0.000000
+    outer loop
+      vertex 10.000000 -20.000000 20.000000
+      vertex -10.000000 -20.000000 20.000000
+      vertex 10.000000 -20.000000 0.000000
+    endloop
+  endfacet
+endsolid Mesh
+```
+
+
+
+
+![3d model of the finished PCB](./door-alarm/assets/door_model_3d.stl)
 
 ```stl
     solid 
